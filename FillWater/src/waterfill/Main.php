@@ -17,6 +17,8 @@ use pocketmine\plugin\PluginBase;
 
 use pocketmine\Player;
 
+use pocketmine\Server;
+
 use pocketmine\block\Block;
 
 use pocketmine\item\Item;
@@ -26,11 +28,7 @@ class Main extends PluginBase implements Listener {
 
     public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $this->getServer()->getLogger()->info("Plugin Enabled!");
-    }
-
-    public function onBlockPlaceEvent(){
-
+        $this->getLogger()->info("Plugin Enabled!");
     }
 }
 
